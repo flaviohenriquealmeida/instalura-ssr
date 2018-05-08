@@ -1,0 +1,100 @@
+@import url('http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+:global .about .container {
+    width: 96%;
+}
+
+:global .about {
+    font-family: "Crimson Text", "Times New Roman", serif;
+    font-size: 1.5em;
+    box-sizing: border-box;
+}
+
+:global .about .text-center {
+    text-align: center;
+}
+
+:global .about .paragraph {
+    text-indent: 2em;
+    text-align: justify;
+}
+
+:global .about .highlight-gradient {
+    background: linear-gradient(to right, #ebe9f9 0%,#d8d0ef 50%,#cec7ec 51%,#c1bfea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+:global .about .title {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    color: white;
+    font-size: 3rem;
+    
+    padding: 0.2em;
+    text-shadow: 3px 3px black;
+}
+
+:global .about .technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:global .about .technology-item {
+    border: 1px solid;
+    flex-basis: 100px;
+    flex-grow: 1;
+    padding: 1em;
+    margin: 0.5em;
+    transition: 0.5s;
+}
+
+:global .about .technology-item:hover {
+    box-shadow: 3px 3px 10px black;
+    transform: scale(1.02);
+}
+
+:global .about .technology-item img{
+    width: 100%;
+}
+
+:global .about .technology-info {
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse: separate;
+    border-spacing: .25em;
+    font-size: 0.8em;
+    border-radius: 100px;
+}
+
+:global .about .round-edge-let {
+    border-radius: 20px 0 0 0;
+}
+
+:global .about .round-edge-right {
+    border-radius: 0 20px 0 0;
+}
+
+:global .about .technology-info th {
+    padding: 0.8em;
+}
+
+:global .about .technology-info tbody td {
+    background: #eee;
+    padding: 0.5em;
+}
+
+:global .about .technology-info tbody tr:hover{
+    filter:contrast(90%);
+}
+
+:global .about .technology-info tfoot td {
+    border-radius: 0 0 20px 20px;
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+:global .about .technology-info {
+    margin-bottom: 2em;
+}

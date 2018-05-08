@@ -1,0 +1,40 @@
+:global .footer .container {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:global .footer {
+    background-image: url(../images/fundo-rodape.png);
+}
+
+:global .footer .social {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 200px;
+}
+
+:global .footer .social li {
+   margin-left: 30px;
+}
+
+:global .footer .social a {
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;  
+  }
+  
+  :global .footer .social a[href*="facebook.com"] {
+    background-image: url(../images/facebook.png);
+  }
+
+  :global .footer .social a[href*="twitter.com"] {
+    background-image: url(../images/twitter.png);
+  }
+  
+  :global .footer .social a[href*="plus.google.com"] {
+    background-image: url(../images/googleplus.png);
+  }
+
