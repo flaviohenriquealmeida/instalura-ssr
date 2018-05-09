@@ -13,3 +13,7 @@ export function like(fotoId,liker){
 export function notifica(msg){
     return {type:'ALERT',msg};
 }
+
+export function apaga(fotoId){
+    return { type:'APAGA', fotoId };
+}

@@ -42,7 +42,7 @@ class Timeline extends Component {
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}>
             {
-              this.props.fotos.map(foto => <FotoItem key={foto.id} foto={foto} like={this.props.like} comenta={this.props.comenta}/>)
+              this.props.fotos.map(foto => <FotoItem key={foto.id} foto={foto} like={this.props.like} comenta={this.props.comenta} apaga={this.props.apaga}/>)
             }               
         </ReactCSSTransitionGroup>        
  
@@ -65,8 +65,10 @@ const mapDispatchToProps = dispatch => {
     },
     lista : (urlPerfil) => {
       dispatch(TimelineApi.lista(urlPerfil));      
+    },
+    apaga: fotoId => {
+      dispatch(TimelineApi.apaga(fotoId));
     }
-
   }
 }
 
