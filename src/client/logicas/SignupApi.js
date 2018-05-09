@@ -1,7 +1,7 @@
 import 'isomorphic-fetch';
 
 const handleStatus = res => 
-    res.ok ? res.json() : Promise.reject(res.statusText);
+    res.ok ? res : Promise.reject(res.statusText);
 
 export default class SignupApi {
 

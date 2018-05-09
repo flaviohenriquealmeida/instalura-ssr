@@ -94,23 +94,23 @@ export default class Signup extends Component {
                 <form onSubmit={this.handleSubmit}>
                     
                     <div className="input-group">
-                        <label>Username</label>
+                        <label>Login</label>
                         <input required name="login" onInput={this.handleInputChange} value={this.state.userName} autoFocus autoComplete="off"/>
                     </div>
                     
                     <div className="input-group">
-                        <label>Password</label>
+                        <label>Senha</label>
                         <input required name="senha" onInput={this.handleInputChange} type="password" value={this.state.password} autoComplete="off"/>
                     </div>
 
                      <div className="input-group">
-                        <label>Confirm password</label>
+                        <label>Confirmação</label>
                         <input required name="confirmacao" onInput={this.handleInputChange} type="password" value={this.state.passwordConfirmation} />
                     </div>
 
                     <div className="input-group">
-                        <label>Perfil url</label>
-                        <input name="urlPerfil" onInput={this.handleInputChange} value={this.state.perfilUrl} />
+                        <label>Url do Perfil</label>
+                        <input required pattern="https?://.+" placeholder="http://endereco.com" name="urlPerfil" onInput={this.handleInputChange} value={this.state.perfilUrl} />
                     </div>
                     
                     <button type="submit">Signup</button>
