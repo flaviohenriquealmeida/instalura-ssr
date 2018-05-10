@@ -92,6 +92,7 @@ export default class TimelineApi {
         .then(() => {
           dispatch(apaga(fotoId));
           dispatch(notifica('Foto apagada com sucesso'));
+          return fotoId;
         })
         .catch(err => {
           console.log(err);

@@ -12,6 +12,7 @@ function trocaFoto(lista,fotoId,callbackAtualizaPropriedades){
 }
 
 export function timeline(state=new List(),action){
+
   if(action.type === 'LISTAGEM'){  
     return new List(action.fotos);
   }
@@ -24,7 +25,7 @@ export function timeline(state=new List(),action){
   }
 
   if(action.type === 'LIKE'){
-
+    
       return trocaFoto(state,action.fotoId,fotoEstadoAntigo => {
         const likeada = !fotoEstadoAntigo.likeada;
         
@@ -40,6 +41,12 @@ export function timeline(state=new List(),action){
 
         return {likeada,likers:novosLikers};
       });
+  }
+
+  if(action.type === 'APAGA') {
+    const fotoId = action.fotoId;
+    const index = state.findIndex(foto => foto.id == fotoId);
+    state = state.delete(index);
   }
 
   return state;
