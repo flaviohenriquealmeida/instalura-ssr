@@ -80,7 +80,6 @@ export default class TimelineApi {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     headers.append('X-AUTH-TOKEN', localStorage.getItem('auth-token'));
-    alert(localStorage.getItem('auth-token'));
     const config = {
       method: 'delete',
       headers
