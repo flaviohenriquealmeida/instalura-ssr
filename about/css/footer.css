@@ -1,0 +1,47 @@
+.footer {
+    background: #383838;
+    padding: 5px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer .social li {
+   margin-left: 30px;
+}
+
+.footer .social a {
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;  
+}
+  
+.footer .social a[href*="facebook.com"] {
+    background-image: url(../imagens/facebook.png);
+}
+
+.footer .social a[href*="twitter.com"] {
+    background-image: url(../imagens/twitter.png);
+}
+  
+.footer .social a[href*="plus.google.com"] {
+    background-image: url(../imagens/googleplus.png);
+}
+
+
+@media(min-width: 650px) {
+
+    .footer {
+        padding-left: 10%;
+    }
+}

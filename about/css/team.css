@@ -1,0 +1,60 @@
+.team {
+    padding: 1em;
+}
+
+.team .title {
+    margin: 1em;
+}
+
+.team-links {
+    color: white;
+    margin-top: 1em;
+}
+
+.team-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.team-links i {
+    text-decoration: none;
+    color:  #617CF2;
+}
+
+.team-links li {
+    margin-top: 1.2em;
+    font-size: 1.2em;
+}
+
+.team-logo {
+    background: url(../imagens/requite.jpeg) no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.team-links li {
+    transition: .5s;
+}
+
+.team-links li:hover {
+    transform: scale(1.1);
+}
+
+@media(min-width: 650px) {
+
+    .team .container {
+        position: relative;
+        padding-left: 40%;
+    }
+    
+    .team-logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40%;
+        height: 200px;
+        background-size: contain
+    }
+}

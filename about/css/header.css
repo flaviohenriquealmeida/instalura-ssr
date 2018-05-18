@@ -1,0 +1,24 @@
+.header {
+    background: #383838;
+    padding: 5px;
+}
+
+.header-search {
+    font-size: 1.1rem;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(min-width: 650px) {
+
+    .header {
+        padding-left: 10%;
+    }
+    .header-search {
+        margin-right: 10%;
+    }
+}

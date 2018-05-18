@@ -1,0 +1,23 @@
+.main {
+    color: white;
+    padding: 2.5em 0;
+    background: url(../imagens/banner.jpeg) no-repeat;
+    background-size: 100% 500px;
+}
+
+.main .title {
+    margin-bottom: 1.5em;
+}
+
+.main-about-text {
+    color: #F8F8F8;
+    margin-bottom: 1.5em;
+}
+
+@media(min-width: 600px) {
+
+    .main-about {
+        margin-left: 200px;
+        width: 30%;
+    }
+}
